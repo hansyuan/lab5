@@ -4,12 +4,19 @@
 $(document).ready(function() {
 	initializePage();
 })
-
-/*
+$("#friends").click(function(e) {
+	$("name").text(anagrammedName(name))
+};
+ /*
  * Function that is called when the document is ready.
  */
 function initializePage() {
 	console.log("Javascript connected!");
+}
+
+function projectClick(e) {
+	e.preventDefault();
+	$(#name).text(anagrammedName(e));
 }
 
 function anagrammedName(name) {

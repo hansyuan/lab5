@@ -11,10 +11,12 @@
 	
 </head>
 
-  {{#each projects}}
-  	    <h3>{{name}}</h3>
+  {{#each friends}}
+  	<div class="friends">
+  		<img src={{imageURL}}>
+  	    <a href="#"><h3>{{name}}</h3></a>
   	    <p>{{description}}</p>
-		<img={{imageURL}}>     
+	</div>
   {{/each}}
 
 <!--  
